@@ -7,6 +7,20 @@
 from telethon.sessions import StringSession
 from telethon.sync import TelegramClient
 
+
+desc = """
+Thank you very much for using this script.
+
+<code>STRING_SESSION</code>: <code>{}</code>
+⚠️ <b>Please be carefull to pass this value to third parties</b>
+
+Credits : @TelethonUpdates
+
+Managed by : @GroupTidakDiketahui
+"""
+
+
+
 print(
    """
  /$$   /$$ /$$$$$$$$ /$$   /$$ /$$$$$$$$  /$$$$$$
@@ -22,6 +36,8 @@ print(
 print("")
 print("""Telethon String !!! No Using API_HASH & API_ID""")
 print("")
+print("")
+print("""Credits by : @xelyourslurred <unknownkz>""")
 API_KEY = "1273127"
 API_HASH = "2626aee4ea587947c6a703f1a0d6a3cc"
 
@@ -30,17 +46,13 @@ while True:
         with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
             print("")
             session = client.session.save()
+            messages_temp = desc.format(session)
             client.send_message(
-                "me",
-                f"Thanks for Using.\n\n `{session}` \n\n⚠️ Please be carefull to pass this value to third parties",
+                "me", messages_temp, parse_mode="html"
             )
-            print(
-                "Your Telethon String Session has been successfully stored in your telegram, Please check your Telegram Saved Messages"
-            )
-            print("")
     except:
         print("")
-        print("Wrong phone number \n make sure its with correct country code")
+        print("Wrong phone number!!!\nMake sure it's with correct country code.")
         print("")
         continue
     break
