@@ -27,5 +27,4 @@ Simple and safety.
 ```
 
 ## License
-
-* [GNU GPL-2.0 License](https://opensource.org/licenses/GPL-2.0) 2022 Unknown
+* [GNU GPL-2.0 License](https://opensource.org/licenses/GPL-2.0)
