@@ -1,10 +1,10 @@
 ### TermuxStringSession ›_
 >Getting session String via Terminal ›_
 Simple and safety.
->>Using and No Using API_ID and API_HASH
+>>Using & No Using API_ID and API_HASH
 
 ### Run ›_
-* Using API_ID and API_HASH
+* Using API_ID and API_HASH (Telethon & Pyrogram)
 ```txt
 ›_ rm -rf termuxstringsession.py && python3 -m pip install --upgrade pip && pkg update -y && pkg upgrade -y && pkg install wget python && pip install wheel && pip install telethon && pip install pyrogram && wget https://raw.githubusercontent.com/unknownkz/TermuxStringSession/master//termuxstringsession.py && chmod +x termuxstringsession.py && python3 termuxstringsession.py
 ```
